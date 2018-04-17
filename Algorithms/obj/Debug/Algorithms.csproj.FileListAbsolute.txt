@@ -1,0 +1,14 @@
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\Algorithms\Algorithms\bin\Debug\Algorithms.exe.config
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\Algorithms\Algorithms\bin\Debug\Algorithms.exe
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\Algorithms\Algorithms\bin\Debug\Algorithms.pdb
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\Algorithms\Algorithms\obj\Debug\Algorithms.exe
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\Algorithms\Algorithms\obj\Debug\Algorithms.pdb
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\Algorithms\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\Algorithms\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\Algorithms\bin\Debug\Algorithms.exe.config
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\Algorithms\bin\Debug\Algorithms.exe
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\Algorithms\bin\Debug\Algorithms.pdb
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\Algorithms\obj\Debug\Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\Algorithms\obj\Debug\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\Algorithms\obj\Debug\Algorithms.exe
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\Algorithms\obj\Debug\Algorithms.pdb

@@ -1,0 +1,14 @@
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\DataStructures\DataStructures\bin\Debug\DataStructures.exe.config
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\DataStructures\DataStructures\bin\Debug\DataStructures.exe
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\DataStructures\DataStructures\bin\Debug\DataStructures.pdb
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\DataStructures\DataStructures\obj\Debug\DataStructures.csprojResolveAssemblyReference.cache
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\DataStructures\DataStructures\obj\Debug\DataStructures.exe
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\DataStructures\DataStructures\obj\Debug\DataStructures.pdb
+C:\Users\Rushang\Source\Workspaces\Competitive Programming\HackerRank\CORE CS\DataStructures\DataStructures\obj\Debug\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\DataStructures\bin\Debug\DataStructures.exe.config
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\DataStructures\bin\Debug\DataStructures.exe
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\DataStructures\bin\Debug\DataStructures.pdb
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\DataStructures\obj\Debug\DataStructures.csprojResolveAssemblyReference.cache
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\DataStructures\obj\Debug\DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\DataStructures\obj\Debug\DataStructures.exe
+C:\Users\Rushang\Source\GitHubRepo\HackerRank\DataStructures\obj\Debug\DataStructures.pdb
