@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using System.Text;
 
 namespace Algorithms.Implementation
 {
@@ -306,9 +305,33 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Beautiful Days at the Movies
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem</Detail>
         internal static void BeautifulDaysattheMovies()
         {
-            throw new NotImplementedException();
+            int[] N = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int Start = N[0];
+            int End = N[1];
+            int k = N[2];
+            int Count = 0;
+
+            for (int Day = Start; Day <= End; Day++)
+            {
+                int RevNum=0;
+                int DayTemp = Day;
+                while(DayTemp != 0)
+                {
+                    RevNum = (RevNum * 10) + (DayTemp % 10);
+                    DayTemp /= 10;
+                }
+
+                if (Math.Abs(Day - RevNum) % k == 0) Count++;
+            }
+
+            Console.WriteLine(Count);
+
         }
 
         internal static void ViralAdvertising()
