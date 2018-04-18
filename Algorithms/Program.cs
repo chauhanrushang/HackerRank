@@ -611,7 +611,6 @@ namespace Algorithms
 
         private static void SortingProgram()
         {
-            bool exit = false;
             Console.WriteLine("Please select an Algorithm for simulation.");
             Console.WriteLine("===================================================");
             Console.WriteLine("0. Exit!");
