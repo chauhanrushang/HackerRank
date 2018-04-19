@@ -68,7 +68,7 @@ namespace Algorithms.Implementation
 
         internal static void BetweenTwoSets()
         {
-
+            throw new NotImplementedException();
         }
 
         internal static void BreakingtheRecords()
@@ -290,9 +290,23 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Designer PDF Viewer
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/designer-pdf-viewer/problem</Detail>
         internal static void DesignerPDFViewer()
         {
-            throw new NotImplementedException();
+            int[] heights = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            char[] Letters = Console.ReadLine().ToCharArray();
+            int rectHeight = 0;
+
+            for (int i = 0; i < Letters.Length; i++)
+            {
+                int Position = Convert.ToInt32(Letters[i]) - Convert.ToInt32('a');
+                rectHeight = Math.Max(rectHeight, heights[Position]);
+            }
+
+            Console.WriteLine(rectHeight * Letters.Length);
         }
 
         internal static void UtopianTree()
@@ -319,9 +333,9 @@ namespace Algorithms.Implementation
 
             for (int Day = Start; Day <= End; Day++)
             {
-                int RevNum=0;
+                int RevNum = 0;
                 int DayTemp = Day;
-                while(DayTemp != 0)
+                while (DayTemp != 0)
                 {
                     RevNum = (RevNum * 10) + (DayTemp % 10);
                     DayTemp /= 10;
@@ -334,9 +348,23 @@ namespace Algorithms.Implementation
 
         }
 
+        /// <summary>
+        /// Viral Advertising
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/strange-advertising/problem</Detail>
         internal static void ViralAdvertising()
         {
-            throw new NotImplementedException();
+            int Days = Convert.ToInt32(Console.ReadLine());
+            int Cumulative = 0;
+            int Shared = 5; // Day 1, Reach 5
+
+            while (Days-- > 0)
+            {
+                Cumulative += (int)Math.Floor((double)Shared / 2);
+                Shared = Shared == 0 ? 5 : (int)Math.Floor((decimal)Shared / 2) * 3;
+            }
+
+            Console.WriteLine(Cumulative);
         }
 
         internal static void SavethePrisoner()
