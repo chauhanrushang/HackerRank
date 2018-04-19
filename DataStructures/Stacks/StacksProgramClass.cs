@@ -51,7 +51,7 @@ namespace DataStructures.Stacks
                     }
                     else
                     {
-                        if (CharStack.Count() <= 0)
+                        if (CharStack.Count <= 0)
                         {
                             Result = "NO";
                             break;
@@ -124,7 +124,7 @@ namespace DataStructures.Stacks
 
                 int TotalElements = 0;
 
-                while (!(x < 0))
+                while (x >= 0)
                 {
 
                     if (nA == 0 && nB == 0)
@@ -132,17 +132,7 @@ namespace DataStructures.Stacks
                         TotalElements++;
                         break;
                     }
-                    else if (nA == 0)
-                    {
-                        x -= StackB.Pop();
-                        nB--;
-                    }
-                    else if (nB == 0)
-                    {
-                        x -= StackA.Pop();
-                        nA--;
-                    }
-                    else if (StackA.Peek() < StackB.Peek())
+                    else if (nB == 0 || StackA.Peek() < StackB.Peek())
                     {
                         x -= StackA.Pop();
                         nA--;

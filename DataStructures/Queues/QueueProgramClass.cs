@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures.Queues
 {
-    public class QueueProgramClass
+    static class QueueProgramClass
     {
         #region Queue using Two Stacks Implementation
         private static Stack<Int32> _S1 = new Stack<int>();

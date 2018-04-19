@@ -11,15 +11,7 @@ namespace Algorithms.Sorting
     {
         internal static void BigSorting()
         {
-            int N = Convert.ToInt32(Console.ReadLine());
-            string[] NumArray = new string[N];
-
-            //Sorting Using Bubble Sort
-            //for (int i = 0; i < length; i++)
-            //{
-
-            //}
-
+            throw new NotImplementedException();
         }
 
         internal static void IntrotoTutorialChallenges()
@@ -158,7 +150,7 @@ namespace Algorithms.Sorting
 
         internal static void CountingSort1()
         {
-            int N = Convert.ToInt32(Console.ReadLine());
+            Console.ReadLine();
             IEnumerable<int> NumArray = Console.ReadLine().Split(' ').Select(int.Parse);
             int[] Numbers = new int[100];
 
@@ -205,7 +197,7 @@ namespace Algorithms.Sorting
         private static List<Tuple<int, string>> InsertionSortForFullCountingSort(List<Tuple<int, string>> intStringPair)
         {
             // Insertion Sort Implementation
-            for (int i = 1; i < intStringPair.Count(); i++)
+            for (int i = 1; i < intStringPair.Count; i++)
             {
                 Tuple<int, string> Key = intStringPair[i];
                 int j = i - 1;
@@ -244,7 +236,7 @@ namespace Algorithms.Sorting
         internal static void LilysHomework()
         {
             int j = 0;
-            int N = Convert.ToInt32(Console.ReadLine());
+            Console.ReadLine();
             IEnumerable<int> Nums = Console.ReadLine().Split(' ').Select(int.Parse);
             Dictionary<int, int> NumAndIndex = new Dictionary<int, int>();
             

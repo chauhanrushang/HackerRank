@@ -8,7 +8,7 @@ namespace DataStructures.Arrays
     {
         internal static void ArrayDS()
         {
-            int N = Convert.ToInt32(Console.ReadLine());
+            Console.ReadLine();
             var intArray = Console.ReadLine().Split(' ').Select(Int32.Parse);
             Console.WriteLine(string.Join(" ", intArray.Reverse()));
         }
@@ -43,7 +43,7 @@ namespace DataStructures.Arrays
             int[] Info = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int NumberOfSequences = Info[0];
             int QueryCount = Info[1];
-            List<Int64>[] Sequences = new List<Int64>[NumberOfSequences];
+            List<Int64>[] Sequences;
             Sequences = Enumerable.Range(0, NumberOfSequences).Select((Sequence) => new List<Int64>()).ToArray();
 
             for (int i = 0; i < QueryCount; i++)
@@ -58,7 +58,7 @@ namespace DataStructures.Arrays
                 }
                 else if (Ops == 2)
                 {
-                    Int64 index = Query[2] % (Int64)Sequences[SeqNum].Count();
+                    Int64 index = Query[2] % (Int64)Sequences[SeqNum].Count;
                     LastAnswer = Sequences[SeqNum][(int)index];
                     Console.WriteLine(LastAnswer);
                 }
@@ -99,7 +99,7 @@ namespace DataStructures.Arrays
             for (int j = 0; j < Q; j++)
             {
                 string QStr = Console.ReadLine();
-                Console.WriteLine(StringCollection.Where(x => x == QStr).Count());
+                Console.WriteLine(StringCollection.Count(x => x == QStr));
             }
         }
 
@@ -129,7 +129,7 @@ namespace DataStructures.Arrays
                 FinalArray[end] -= Value;
             }
 
-            foreach (int item in FinalArray)
+            foreach (long item in FinalArray)
             {
                 x += item;
                 if (x > max) max = x;

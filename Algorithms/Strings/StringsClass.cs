@@ -13,7 +13,7 @@ namespace Algorithms.Strings
             var CharArray = Console.ReadLine().ToCharArray();
             var NewCharArray = SuperReducedString(CharArray);
 
-            if (NewCharArray.Count() > 0)
+            if (NewCharArray.Any())
                 Console.WriteLine(string.Join("", NewCharArray));
             else
                 Console.WriteLine("Empty String");
@@ -63,10 +63,10 @@ namespace Algorithms.Strings
             string Password = Console.ReadLine();
             int MinCharReq = 0;
 
-            if (Password.Intersect(numbers.ToCharArray()).Count() == 0) MinCharReq++;
-            if (Password.Intersect(lower_case.ToCharArray()).Count() == 0) MinCharReq++;
-            if (Password.Intersect(upper_case.ToCharArray()).Count() == 0) MinCharReq++;
-            if (Password.Intersect(special_characters.ToCharArray()).Count() == 0) MinCharReq++;
+            if (!Password.Intersect(numbers.ToCharArray()).Any()) MinCharReq++;
+            if (!Password.Intersect(lower_case.ToCharArray()).Any()) MinCharReq++;
+            if (!Password.Intersect(upper_case.ToCharArray()).Any()) MinCharReq++;
+            if (!Password.Intersect(special_characters.ToCharArray()).Any()) MinCharReq++;
 
             MinCharReq = Math.Max(6-Password.Length, MinCharReq);
 

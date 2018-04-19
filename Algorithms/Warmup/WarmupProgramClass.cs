@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Algorithms.Warmup
 {
-    internal class WarmupProgramClass
+    static internal class WarmupProgramClass
     {
         internal static void SolveMeFirst()
         {

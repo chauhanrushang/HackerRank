@@ -37,8 +37,8 @@ namespace Algorithms.Implementation
 
             Console.ReadLine();
 
-            Console.WriteLine(Console.ReadLine().Split().Select(Int32.Parse).Where(n => (n >= AppleRangeStart && n <= AppleRangeEnd)).Count());
-            Console.WriteLine(Console.ReadLine().Split().Select(Int32.Parse).Where(n => (n >= OrangeRangeStart && n <= OrangeRangeEnd)).Count());
+            Console.WriteLine(Console.ReadLine().Split().Select(Int32.Parse).Count(n => (n >= AppleRangeStart && n <= AppleRangeEnd)));
+            Console.WriteLine(Console.ReadLine().Split().Select(Int32.Parse).Count(n => (n >= OrangeRangeStart && n <= OrangeRangeEnd)));
         }
 
         internal static void Kangaroo()
@@ -111,13 +111,12 @@ namespace Algorithms.Implementation
 
         internal static void MigratoryBirds()
         {
-            int n = Convert.ToInt32(Console.ReadLine());
-            string[] ar_temp = Console.ReadLine().Split(' ');
-            int[] ar = Array.ConvertAll(ar_temp, Int32.Parse);
+            throw new NotImplementedException();
+            //int n = Convert.ToInt32(Console.ReadLine());
+            //string[] ar_temp = Console.ReadLine().Split(' ');
+            //int[] ar = Array.ConvertAll(ar_temp, Int32.Parse);
 
-            var abc = ar.GroupBy(x => x).OrderByDescending(x => x.Count()).ThenBy(x => x.Key).Select(x => x.Key).FirstOrDefault(); ;
-
-            //Console.WriteLine(result);
+            //var abc = ar.GroupBy(x => x).OrderByDescending(x => x.Count()).ThenBy(x => x.Key).Select(x => x.Key).FirstOrDefault();
         }
 
         internal static void DayoftheProgrammer()
