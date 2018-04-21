@@ -308,6 +308,10 @@ namespace Algorithms.Implementation
             Console.WriteLine(rectHeight * Letters.Length);
         }
 
+        /// <summary>
+        /// Utopian Tree
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/utopian-tree/problem</Detail>
         internal static void UtopianTree()
         {
             throw new NotImplementedException();
@@ -366,9 +370,27 @@ namespace Algorithms.Implementation
             Console.WriteLine(Cumulative);
         }
 
+        /// <summary>
+        /// Save the Prisoner!
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/save-the-prisoner/problem</Detail>
         internal static void SavethePrisoner()
         {
-            throw new NotImplementedException();
+            int TestCases = Convert.ToInt32(Console.ReadLine());
+
+            while (TestCases-- > 0)
+            {
+                int[] Arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+                int NumPrisioners = Arr[0];
+                int NumSweets = Arr[1];
+                int Start = Arr[2];
+                int WarnPrisionerNum = (NumSweets + Start - 1) % NumPrisioners;
+
+                if (WarnPrisionerNum == 0)
+                    WarnPrisionerNum = NumPrisioners;
+
+                Console.WriteLine(WarnPrisionerNum);
+            }
         }
 
         internal static void CircularArrayRotation()
@@ -426,9 +448,27 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Jumping on the Clouds
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem</Detail>
         internal static void JumpingontheClouds()
         {
-            throw new NotImplementedException();
+            Console.ReadLine();
+            int[] Steps = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int TotalSteps = 0;
+            int i;
+            for (i = 0; i < Steps.Length - 2; i++)
+            {
+                if (Steps[i + 1] == 1 || (Steps[i + 1] == 0 && Steps[i + 2] == 0))
+                    i++;
+
+                TotalSteps++;
+            }
+
+            if (Steps.Last() == 0 && i < Steps.Length - 1) TotalSteps++;
+
+            Console.WriteLine(TotalSteps);
         }
 
         internal static void EqualizetheArray()
