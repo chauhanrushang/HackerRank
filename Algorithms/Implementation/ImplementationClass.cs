@@ -355,6 +355,7 @@ namespace Algorithms.Implementation
         /// Viral Advertising
         /// </summary>
         /// <Detail name="URL">https://www.hackerrank.com/challenges/strange-advertising/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void ViralAdvertising()
         {
             int Days = Convert.ToInt32(Console.ReadLine());
@@ -403,6 +404,12 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Jumping on the Clouds: Revisited
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/jumping-on-the-clouds-revisited/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void JumpingontheCloudsRevisited()
         {
             throw new NotImplementedException();
@@ -443,9 +450,20 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Repeated String
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/repeated-string/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void RepeatedString()
         {
-            throw new NotImplementedException();
+            string S = Console.ReadLine();
+            Int64 N = Convert.ToInt64(Console.ReadLine());
+            Int64 OccuranceInGivenString = S.Count(x => x == 'a');
+            Int64 OccuranceInFullyRepeatedSeq = (N / S.Length) * OccuranceInGivenString;
+            Int64 OccuranceInPartialSeq = S.Take((int)(N % S.Length)).Count(x => x == 'a');
+            Console.WriteLine(OccuranceInFullyRepeatedSeq + OccuranceInPartialSeq);
         }
 
         /// <summary>
@@ -471,9 +489,16 @@ namespace Algorithms.Implementation
             Console.WriteLine(TotalSteps);
         }
 
+        /// <summary>
+        /// Equalize the Array
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/equality-in-a-array/problem</Detail>
         internal static void EqualizetheArray()
         {
-            throw new NotImplementedException();
+            int N = Convert.ToInt32(Console.ReadLine());
+            int[] Arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int MaxSameElement = Arr.GroupBy(x => x).Max(x => x.Count());
+            Console.WriteLine(N - MaxSameElement);
         }
 
         internal static void QueensAttackII()

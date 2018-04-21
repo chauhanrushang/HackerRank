@@ -68,7 +68,7 @@ namespace Algorithms.Strings
             if (!Password.Intersect(upper_case.ToCharArray()).Any()) MinCharReq++;
             if (!Password.Intersect(special_characters.ToCharArray()).Any()) MinCharReq++;
 
-            MinCharReq = Math.Max(6-Password.Length, MinCharReq);
+            MinCharReq = Math.Max(6 - Password.Length, MinCharReq);
 
             Console.WriteLine(MinCharReq);
         }
@@ -78,14 +78,59 @@ namespace Algorithms.Strings
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Mars Exploration
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/mars-exploration/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void MarsExploration()
         {
-            throw new NotImplementedException();
+            char[] Message = Console.ReadLine().ToCharArray();
+            char[] S = { 'S', 'O', 'S' };
+            int i = 0;
+            int result = 0;
+
+            foreach (char c in Message)
+            {
+                if (c != S[i])
+                    result++;
+
+                i = i == 2 ? 0 : ++i;
+            }
+
+            Console.WriteLine(result);
         }
 
+
+        /// <summary>
+        /// HackerRank in a String!
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/hackerrank-in-a-string/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void HackerRankinaString()
         {
-            throw new NotImplementedException();
+            int Queries = Convert.ToInt32(Console.ReadLine());
+            char[] word = "hackerrank".ToCharArray();
+
+            while (Queries-- > 0)
+            {
+                char[] Input = Console.ReadLine().ToCharArray();
+                int i = 0;
+
+                foreach (char C in Input)
+                {
+                    if (C == word[i])
+                    {
+                        i++;
+
+                        if (i > word.Length - 1)
+                            break;
+                    }
+                }
+
+                Console.WriteLine((i > word.Length - 1 ? "YES" : "NO"));
+            }
         }
 
         internal static void Pangrams()
@@ -113,9 +158,32 @@ namespace Algorithms.Strings
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Alternating Characters 
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/alternating-characters/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void AlternatingCharacters()
         {
-            throw new NotImplementedException();
+            int N = Convert.ToInt32(Console.ReadLine());
+
+            while (N-- > 0)
+            {
+                char[] Input = Console.ReadLine().ToCharArray();
+                char Prev = ' ';
+                int DelCount = 0;
+
+                foreach (char c in Input)
+                {
+                    if (Prev == c)
+                        DelCount++;
+                    else
+                        Prev = c;
+                }
+
+                Console.WriteLine(DelCount);
+            }
         }
 
         internal static void BeautifulBinaryString()
@@ -148,9 +216,15 @@ namespace Algorithms.Strings
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Game of Thrones - I
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/game-of-thrones/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void GameofThronesI()
         {
-            throw new NotImplementedException();
+            Console.WriteLine(Console.ReadLine().GroupBy(x => x).Count(x => x.Count() % 2 != 0) > 1 ? "NO" : "YES");
         }
 
         internal static void TwoStrings()
