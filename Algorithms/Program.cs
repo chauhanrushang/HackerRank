@@ -720,6 +720,8 @@ namespace Algorithms
 
             switch ((GreedyProgramTypes)input)
             {
+                case GreedyProgramTypes.Exit:
+                    break;
                 case GreedyProgramTypes.MinimumAbsoluteDifferenceinanArray:
                     GreedyProgramClass.MinimumAbsoluteDifferenceinanArray();
                     break;
@@ -853,6 +855,8 @@ namespace Algorithms
 
             switch ((DynamicProgrammingProgramTypes)input)
             {
+                case DynamicProgrammingProgramTypes.Exit:
+                    break;
                 case DynamicProgrammingProgramTypes.TheCoinChangeProblem:
                     DynamicClass.TheCoinChangeProblem();
                     break;

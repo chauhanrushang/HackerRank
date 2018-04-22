@@ -8,6 +8,7 @@ namespace Algorithms.DynamicProgramming
 {
     public enum DynamicProgrammingProgramTypes
     {
+        Exit,
         TheCoinChangeProblem,
         Equal,
         SherlockandCost,

@@ -8,6 +8,7 @@ namespace Algorithms.Greedy
 {
     public enum GreedyProgramTypes
     {
+        Exit,
         MinimumAbsoluteDifferenceinanArray,
         MarcsCakewalk,
         GridChallenge,
