@@ -49,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlgorithmType.cs" />
+    <Compile Include="DynamicProgramming\DynamicClass.cs" />
+    <Compile Include="DynamicProgramming\DynamicProgrammingProgramTypes.cs" />
     <Compile Include="Implementation\ImplementationClass.cs" />
     <Compile Include="Implementation\ImplementationProgramTypes.cs" />
     <Compile Include="Program.cs" />
@@ -66,7 +68,6 @@
   <ItemGroup>
     <Folder Include="BitManipulation\" />
     <Folder Include="ConstructiveAlgorithms\" />
-    <Folder Include="DynamicProgramming\" />
     <Folder Include="GameTheory\" />
     <Folder Include="GraphTheory\" />
     <Folder Include="Greedy\" />

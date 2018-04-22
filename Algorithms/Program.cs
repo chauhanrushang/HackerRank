@@ -1,4 +1,5 @@
 ﻿using System;
+using Algorithms.DynamicProgramming;
 using Algorithms.Implementation;
 using Algorithms.Sorting;
 using Algorithms.Strings;
@@ -83,7 +84,7 @@ namespace Algorithms
 
         private static void WarmupProgram()
         {
-            Console.WriteLine("Please select an WarmupProgram for simulation.");
+            Console.WriteLine("Please select an Warmup Program for simulation.");
             Console.WriteLine("===================================================");
             Console.WriteLine("0. Exit!");
             Console.WriteLine("1. Solve Me First");
@@ -140,7 +141,7 @@ namespace Algorithms
 
         private static void ImplementationProgram()
         {
-            Console.WriteLine("Please select an WarmupProgram for simulation.");
+            Console.WriteLine("Please select an Implementation Program for simulation.");
             Console.WriteLine("===================================================");
             Console.WriteLine("00. Exit!");
             Console.WriteLine("01. Grading Students");
@@ -414,7 +415,7 @@ namespace Algorithms
 
         private static void StringsProgram()
         {
-            Console.WriteLine("Please select an WarmupProgram for simulation.");
+            Console.WriteLine("Please select an Strings Program for simulation.");
             Console.WriteLine("===================================================");
             Console.WriteLine("00. Exit!");
             Console.WriteLine("01. Super Reduced String");
@@ -625,7 +626,6 @@ namespace Algorithms
             Console.WriteLine("9. Counting Sort 2");
             Console.WriteLine("10. The Full Counting Sort");
             Console.WriteLine("===================================================");
-            Console.WriteLine();
             int input = Convert.ToInt32(Console.ReadLine());
 
             switch ((SortingProgramTypes)input)
@@ -645,13 +645,13 @@ namespace Algorithms
                     SortingClass.InsertionSortPart2();
                     break;
                 case SortingProgramTypes.CorrectnessandtheLoopInvariant:
-                    SortingClass.CorrectnessandtheLoopInvariant(); 
+                    SortingClass.CorrectnessandtheLoopInvariant();
                     break;
                 case SortingProgramTypes.RunningTimeofAlgorithms:
-                    SortingClass.RunningTimeofAlgorithms(); 
+                    SortingClass.RunningTimeofAlgorithms();
                     break;
                 case SortingProgramTypes.Quicksort1Partition:
-                    SortingClass.Quicksort1Partition(); 
+                    SortingClass.Quicksort1Partition();
                     break;
                 case SortingProgramTypes.CountingSort1:
                     SortingClass.CountingSort1();
@@ -660,7 +660,7 @@ namespace Algorithms
                     SortingClass.CountingSort2();
                     break;
                 case SortingProgramTypes.TheFullCountingSort:
-                    SortingClass.TheFullCountingSort(); 
+                    SortingClass.TheFullCountingSort();
                     break;
                 case SortingProgramTypes.ClosestNumbers:
                     SortingClass.ClosestNumbers();
@@ -694,7 +694,216 @@ namespace Algorithms
 
         private static void DynamicProgrammingProgram()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Please select an Dynamic Programming Program for simulation.");
+            Console.WriteLine("===================================================");
+            Console.WriteLine("00. Exit!");
+            Console.WriteLine("01. The Coin Change Problem");
+            Console.WriteLine("02. Equal");
+            Console.WriteLine("03. Sherlock and Cost");
+            Console.WriteLine("04. Construct the Array");
+            Console.WriteLine("05. Kingdom Division");
+            Console.WriteLine("06. Candies");
+            Console.WriteLine("07. Sam and sub-strings");
+            Console.WriteLine("08. Fibonacci Modified");
+            Console.WriteLine("09. Abbreviation");
+            Console.WriteLine("10. Prime XOR");
+            Console.WriteLine("11. Decibinary Numbers");
+            Console.WriteLine("12. Fair Cut");
+            Console.WriteLine("13. The Maximum Subarray");
+            Console.WriteLine("14. Angry Children 2");
+            Console.WriteLine("15. Sherlock's Array Merging Algorithm");
+            Console.WriteLine("16. Prime Digit Sums");
+            Console.WriteLine("17. HackerRank City");
+            Console.WriteLine("18. Summing Pieces");
+            Console.WriteLine("19. Mr K marsh");
+            Console.WriteLine("20. Substring Diff");
+            Console.WriteLine("21. Xor and Sum");
+            Console.WriteLine("22. Lego Blocks");
+            Console.WriteLine("23. Brick Tiling");
+            Console.WriteLine("24. Alien Languages");
+            Console.WriteLine("25. Stock Maximize");
+            Console.WriteLine("26. Two Robots");
+            Console.WriteLine("27. Cut Tree");
+            Console.WriteLine("28. Tara's Beautiful Permutations");
+            Console.WriteLine("29. Wet Shark and Two Subsequences");
+            Console.WriteLine("30. Nikita and the Game");
+            Console.WriteLine("31. Choosing White Balls");
+            Console.WriteLine("32. Mandragora Forest");
+            Console.WriteLine("33. Red John is Back");
+            Console.WriteLine("34. LCS Returns");
+            Console.WriteLine("35. Grid Walking");
+            Console.WriteLine("36. Matrix Land");
+            Console.WriteLine("37. Knapsack");
+            Console.WriteLine("38. Bricks Game");
+            Console.WriteLine("39. The Longest Increasing Subsequence");
+            Console.WriteLine("40. Coin on the Table");
+            Console.WriteLine("41. The Longest Common Subsequence");
+            Console.WriteLine("42. Play with words");
+            Console.WriteLine("43. Black and White Tree");
+            Console.WriteLine("44. Counting Special Sub-Cubes");
+            Console.WriteLine("45. Interval Selection");
+            Console.WriteLine("46. String Reduction");
+            Console.WriteLine("47. Far Vertices");
+            Console.WriteLine("48. Counting Road Networks");
+            Console.WriteLine("49. Superman Celebrates Diwali");
+            Console.WriteLine("50. Hexagonal Grid");
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            switch ((DynamicProgrammingProgramTypes)input)
+            {
+                case DynamicProgrammingProgramTypes.TheCoinChangeProblem:
+                    DynamicClass.TheCoinChangeProblem();
+                    break;
+                case DynamicProgrammingProgramTypes.Equal:
+                    DynamicClass.Equal();
+                    break;
+                case DynamicProgrammingProgramTypes.SherlockandCost:
+                    DynamicClass.SherlockandCost();
+                    break;
+                case DynamicProgrammingProgramTypes.ConstructtheArray:
+                    DynamicClass.ConstructtheArray();
+                    break;
+                case DynamicProgrammingProgramTypes.KingdomDivision:
+                    DynamicClass.KingdomDivision();
+                    break;
+                case DynamicProgrammingProgramTypes.Candies:
+                    DynamicClass.Candies();
+                    break;
+                case DynamicProgrammingProgramTypes.Samandsubstrings:
+                    DynamicClass.Samandsubstrings();
+                    break;
+                case DynamicProgrammingProgramTypes.FibonacciModified:
+                    DynamicClass.FibonacciModified();
+                    break;
+                case DynamicProgrammingProgramTypes.Abbreviation:
+                    DynamicClass.Abbreviation();
+                    break;
+                case DynamicProgrammingProgramTypes.PrimeXOR:
+                    DynamicClass.PrimeXOR();
+                    break;
+                case DynamicProgrammingProgramTypes.DecibinaryNumbers:
+                    DynamicClass.DecibinaryNumbers();
+                    break;
+                case DynamicProgrammingProgramTypes.FairCut:
+                    DynamicClass.FairCut();
+                    break;
+                case DynamicProgrammingProgramTypes.TheMaximumSubarray:
+                    DynamicClass.TheMaximumSubarray();
+                    break;
+                case DynamicProgrammingProgramTypes.AngryChildren2:
+                    DynamicClass.AngryChildren2();
+                    break;
+                case DynamicProgrammingProgramTypes.SherlocksArrayMergingAlgorithm:
+                    DynamicClass.SherlocksArrayMergingAlgorithm();
+                    break;
+                case DynamicProgrammingProgramTypes.PrimeDigitSums:
+                    DynamicClass.PrimeDigitSums();
+                    break;
+                case DynamicProgrammingProgramTypes.HackerRankCity:
+                    DynamicClass.HackerRankCity();
+                    break;
+                case DynamicProgrammingProgramTypes.SummingPieces:
+                    DynamicClass.SummingPieces();
+                    break;
+                case DynamicProgrammingProgramTypes.MrKmarsh:
+                    DynamicClass.MrKmarsh();
+                    break;
+                case DynamicProgrammingProgramTypes.SubstringDiff:
+                    DynamicClass.SubstringDiff();
+                    break;
+                case DynamicProgrammingProgramTypes.XorandSum:
+                    DynamicClass.XorandSum();
+                    break;
+                case DynamicProgrammingProgramTypes.LegoBlocks:
+                    DynamicClass.LegoBlocks();
+                    break;
+                case DynamicProgrammingProgramTypes.BrickTiling:
+                    DynamicClass.BrickTiling();
+                    break;
+                case DynamicProgrammingProgramTypes.AlienLanguages:
+                    DynamicClass.AlienLanguages();
+                    break;
+                case DynamicProgrammingProgramTypes.StockMaximize:
+                    DynamicClass.StockMaximize();
+                    break;
+                case DynamicProgrammingProgramTypes.TwoRobots:
+                    DynamicClass.TwoRobots();
+                    break;
+                case DynamicProgrammingProgramTypes.CutTree:
+                    DynamicClass.CutTree();
+                    break;
+                case DynamicProgrammingProgramTypes.TarasBeautifulPermutations:
+                    DynamicClass.TarasBeautifulPermutations();
+                    break;
+                case DynamicProgrammingProgramTypes.WetSharkandTwoSubsequences:
+                    DynamicClass.WetSharkandTwoSubsequences();
+                    break;
+                case DynamicProgrammingProgramTypes.NikitaandtheGame:
+                    DynamicClass.NikitaandtheGame();
+                    break;
+                case DynamicProgrammingProgramTypes.ChoosingWhiteBalls:
+                    DynamicClass.ChoosingWhiteBalls();
+                    break;
+                case DynamicProgrammingProgramTypes.MandragoraForest:
+                    DynamicClass.MandragoraForest();
+                    break;
+                case DynamicProgrammingProgramTypes.RedJohnisBack:
+                    DynamicClass.RedJohnisBack();
+                    break;
+                case DynamicProgrammingProgramTypes.LCSReturns:
+                    DynamicClass.LCSReturns();
+                    break;
+                case DynamicProgrammingProgramTypes.GridWalking:
+                    DynamicClass.GridWalking();
+                    break;
+                case DynamicProgrammingProgramTypes.MatrixLand:
+                    DynamicClass.MatrixLand();
+                    break;
+                case DynamicProgrammingProgramTypes.Knapsack:
+                    DynamicClass.Knapsack();
+                    break;
+                case DynamicProgrammingProgramTypes.BricksGame:
+                    DynamicClass.BricksGame();
+                    break;
+                case DynamicProgrammingProgramTypes.TheLongestIncreasingSubsequence:
+                    DynamicClass.TheLongestIncreasingSubsequence();
+                    break;
+                case DynamicProgrammingProgramTypes.CoinontheTable:
+                    DynamicClass.CoinontheTable();
+                    break;
+                case DynamicProgrammingProgramTypes.TheLongestCommonSubsequence:
+                    DynamicClass.TheLongestCommonSubsequence();
+                    break;
+                case DynamicProgrammingProgramTypes.Playwithwords:
+                    DynamicClass.Playwithwords();
+                    break;
+                case DynamicProgrammingProgramTypes.BlackandWhiteTree:
+                    DynamicClass.BlackandWhiteTree();
+                    break;
+                case DynamicProgrammingProgramTypes.CountingSpecialSubCubes:
+                    DynamicClass.CountingSpecialSubCubes();
+                    break;
+                case DynamicProgrammingProgramTypes.IntervalSelection:
+                    DynamicClass.IntervalSelection();
+                    break;
+                case DynamicProgrammingProgramTypes.StringReduction:
+                    DynamicClass.StringReduction();
+                    break;
+                case DynamicProgrammingProgramTypes.FarVertices:
+                    DynamicClass.FarVertices();
+                    break;
+                case DynamicProgrammingProgramTypes.CountingRoadNetworks:
+                    DynamicClass.CountingRoadNetworks();
+                    break;
+                case DynamicProgrammingProgramTypes.SupermanCelebratesDiwali:
+                    DynamicClass.SupermanCelebratesDiwali();
+                    break;
+                case DynamicProgrammingProgramTypes.HexagonalGrid:
+                    DynamicClass.HexagonalGrid();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private static void ConstructiveAlgorithmsProgram()
