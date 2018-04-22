@@ -51,6 +51,8 @@
     <Compile Include="AlgorithmType.cs" />
     <Compile Include="DynamicProgramming\DynamicClass.cs" />
     <Compile Include="DynamicProgramming\DynamicProgrammingProgramTypes.cs" />
+    <Compile Include="Greedy\GreedyProgramClass.cs" />
+    <Compile Include="Greedy\GreedyProgramTypes.cs" />
     <Compile Include="Implementation\ImplementationClass.cs" />
     <Compile Include="Implementation\ImplementationProgramTypes.cs" />
     <Compile Include="Program.cs" />
@@ -70,7 +72,6 @@
     <Folder Include="ConstructiveAlgorithms\" />
     <Folder Include="GameTheory\" />
     <Folder Include="GraphTheory\" />
-    <Folder Include="Greedy\" />
     <Folder Include="NPComplete\" />
     <Folder Include="Recursion\" />
   </ItemGroup>

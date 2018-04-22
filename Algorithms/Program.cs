@@ -1,5 +1,6 @@
 ﻿using System;
 using Algorithms.DynamicProgramming;
+using Algorithms.Greedy;
 using Algorithms.Implementation;
 using Algorithms.Sorting;
 using Algorithms.Strings;
@@ -689,7 +690,108 @@ namespace Algorithms
 
         private static void GreedyProgram()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Please select an Dynamic Programming Program for simulation.");
+            Console.WriteLine("===================================================");
+            Console.WriteLine("00. Exit!");
+            Console.WriteLine("01. Minimum Absolute Difference in an Array");
+            Console.WriteLine("02. Marc's Cakewalk");
+            Console.WriteLine("03. Grid Challenge");
+            Console.WriteLine("04. Luck Balance");
+            Console.WriteLine("05. Maximum Perimeter Triangle");
+            Console.WriteLine("06. Beautiful Pairs");
+            Console.WriteLine("07. Sherlock and The Beast");
+            Console.WriteLine("08. Priyanka and Toys");
+            Console.WriteLine("09. Largest Permutation");
+            Console.WriteLine("10. Mark and Toys");
+            Console.WriteLine("11. Greedy Florist");
+            Console.WriteLine("12. Max Min");
+            Console.WriteLine("13. Jim and the Orders");
+            Console.WriteLine("14. Permuting Two Arrays");
+            Console.WriteLine("15. Cutting Boards");
+            Console.WriteLine("16. Reverse Shuffle Merge");
+            Console.WriteLine("17. Goodland Electricity");
+            Console.WriteLine("18. Cloudy Day");
+            Console.WriteLine("19. Chief Hopper");
+            Console.WriteLine("20. Sherlock and MiniMax");
+            Console.WriteLine("21. Accessory Collection");
+            Console.WriteLine("22. Team Formation");
+            Console.WriteLine("23. Fighting Pits");
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            switch ((GreedyProgramTypes)input)
+            {
+                case GreedyProgramTypes.MinimumAbsoluteDifferenceinanArray:
+                    GreedyProgramClass.MinimumAbsoluteDifferenceinanArray();
+                    break;
+                case GreedyProgramTypes.MarcsCakewalk:
+                    GreedyProgramClass.MarcsCakewalk();
+                    break;
+                case GreedyProgramTypes.GridChallenge:
+                    GreedyProgramClass.GridChallenge();
+                    break;
+                case GreedyProgramTypes.LuckBalance:
+                    GreedyProgramClass.LuckBalance();
+                    break;
+                case GreedyProgramTypes.MaximumPerimeterTriangle:
+                    GreedyProgramClass.MaximumPerimeterTriangle();
+                    break;
+                case GreedyProgramTypes.BeautifulPairs:
+                    GreedyProgramClass.BeautifulPairs();
+                    break;
+                case GreedyProgramTypes.SherlockandTheBeast:
+                    GreedyProgramClass.SherlockandTheBeast();
+                    break;
+                case GreedyProgramTypes.PriyankaandToys:
+                    GreedyProgramClass.PriyankaandToys();
+                    break;
+                case GreedyProgramTypes.LargestPermutation:
+                    GreedyProgramClass.LargestPermutation();
+                    break;
+                case GreedyProgramTypes.MarkandToys:
+                    GreedyProgramClass.MarkandToys();
+                    break;
+                case GreedyProgramTypes.GreedyFlorist:
+                    GreedyProgramClass.GreedyFlorist();
+                    break;
+                case GreedyProgramTypes.MaxMin:
+                    GreedyProgramClass.MaxMin();
+                    break;
+                case GreedyProgramTypes.JimandtheOrders:
+                    GreedyProgramClass.JimandtheOrders();
+                    break;
+                case GreedyProgramTypes.PermutingTwoArrays:
+                    GreedyProgramClass.PermutingTwoArrays();
+                    break;
+                case GreedyProgramTypes.CuttingBoards:
+                    GreedyProgramClass.CuttingBoards();
+                    break;
+                case GreedyProgramTypes.ReverseShuffleMerge:
+                    GreedyProgramClass.ReverseShuffleMerge();
+                    break;
+                case GreedyProgramTypes.GoodlandElectricity:
+                    GreedyProgramClass.GoodlandElectricity();
+                    break;
+                case GreedyProgramTypes.CloudyDay:
+                    GreedyProgramClass.CloudyDay();
+                    break;
+                case GreedyProgramTypes.ChiefHopper:
+                    GreedyProgramClass.ChiefHopper();
+                    break;
+                case GreedyProgramTypes.SherlockandMiniMax:
+                    GreedyProgramClass.SherlockandMiniMax();
+                    break;
+                case GreedyProgramTypes.AccessoryCollection:
+                    GreedyProgramClass.AccessoryCollection();
+                    break;
+                case GreedyProgramTypes.TeamFormation:
+                    GreedyProgramClass.TeamFormation();
+                    break;
+                case GreedyProgramTypes.FightingPits:
+                    GreedyProgramClass.FightingPits();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private static void DynamicProgrammingProgram()
