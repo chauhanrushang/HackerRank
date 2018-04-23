@@ -45,14 +45,40 @@ namespace Algorithms.Greedy
             Console.WriteLine(result);
         }
 
-        internal static void GetaninterviewwithHackerRank()
-        {
-            throw new NotImplementedException();
-        }
 
+        /// <summary>
+        /// Grid Challenge
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/grid-challenge/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void GridChallenge()
         {
-            throw new NotImplementedException();
+            int t = Convert.ToInt32(Console.ReadLine());
+
+            while (t-- > 0)
+            {
+                int N = Convert.ToInt32(Console.ReadLine());
+                char[][] Matrix = new char[N][];
+                bool IsSorted = true;
+
+                for (int i = 0; i < N; i++)
+                    Matrix[i] = Console.ReadLine().OrderBy(x => x).ToArray();
+
+                for (int x = 0; x < N; x++)
+                {
+                    for (int y = 0; y < N - 1; y++)
+                    {
+                        if (Matrix[y][x] > Matrix[y + 1][x])
+                        {
+                            IsSorted = false;
+                            break;
+                        }
+                    }
+                    if (!IsSorted) break;
+                }
+
+                Console.WriteLine(IsSorted ? "YES" : "NO");
+            }
         }
 
         internal static void LuckBalance()
@@ -130,9 +156,27 @@ namespace Algorithms.Greedy
 
         }
 
+
+        /// <summary>
+        /// Greedy Florist
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/greedy-florist/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void GreedyFlorist()
         {
-            throw new NotImplementedException();
+            int[] N = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int flowersNum = N[0];
+            int friendsNum = N[1];
+            int[] FlowerRates = Console.ReadLine().Split(' ').Select(int.Parse).OrderByDescending(x => x).ToArray();
+            int rounds = (int)Math.Ceiling((decimal)flowersNum / friendsNum);
+            int MinAmt = 0;
+
+            while (rounds > 0)
+            {
+                MinAmt += FlowerRates.Skip(friendsNum * (rounds - 1)).Take(friendsNum).Sum() * rounds;
+                rounds--;
+            }
+            Console.WriteLine(MinAmt);
         }
 
         internal static void MaxMin()
