@@ -179,14 +179,48 @@ namespace Algorithms.Greedy
             Console.WriteLine(MinAmt);
         }
 
+
+        /// <summary>
+        /// Max Min
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/angry-children/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void MaxMin()
         {
-            throw new NotImplementedException();
+            int N = Convert.ToInt32(Console.ReadLine());
+            int M = Convert.ToInt32(Console.ReadLine());
+            int[] Arr = new int[N];
+            int MinDiff = Int32.MaxValue;
+
+
+            for (int i = 0; i < N; i++)
+                Arr[i] = Convert.ToInt32(Console.ReadLine());
+
+            Array.Sort(Arr);
+
+            for (int k = 0; k <= N - M; k++)
+                if (MinDiff > Arr[k + M - 1] - Arr[k])
+                    MinDiff = Arr[k + M - 1] - Arr[k];
+
+            Console.WriteLine(MinDiff);
         }
 
+
+        /// <summary>
+        /// Jim and the Orders
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/jim-and-the-orders/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void JimandtheOrders()
         {
-            throw new NotImplementedException();
+            List<Tuple<int, int>> CustomerAndOrder = new List<Tuple<int, int>>();
+            int N = Convert.ToInt32(Console.ReadLine());
+            int Customer = 1;
+
+            while (N-- > 0)
+                CustomerAndOrder.Add( new Tuple<int, int>(Console.ReadLine().Split(' ').Select(int.Parse).Skip(1).First(), Customer++ ));
+
+            Console.WriteLine(string.Join(" ",CustomerAndOrder.OrderBy(x => x.Item1).ThenBy(x => x.Item2).Select(x => x.Item2)));
         }
 
         internal static void PermutingTwoArrays()
