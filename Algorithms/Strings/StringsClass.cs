@@ -148,9 +148,33 @@ namespace Algorithms.Strings
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Funny String
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/funny-string/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void FunnyString()
         {
-            throw new NotImplementedException();
+            int TestCases = Convert.ToInt32(Console.ReadLine());
+
+            while (TestCases-- > 0)
+            {
+                char[] S = Console.ReadLine().ToCharArray();
+                char[] R = S.Reverse().ToArray();
+                bool IsFunny = true;
+
+                for (int i = 0; i < S.Length - 1; i++)
+                {
+                    if (Math.Abs(S[i + 1] - S[i]) != Math.Abs(R[i + 1] - R[i]))
+                    {
+                        IsFunny = false;
+                        break;
+                    }
+                }
+
+                Console.WriteLine(IsFunny ? "Funny" : "Not Funny");
+            }
         }
 
         internal static void Gemstones()
@@ -346,7 +370,7 @@ namespace Algorithms.Strings
         {
             throw new NotImplementedException();
         }
-
+        
         internal static void HowManySubstrings()
         {
             throw new NotImplementedException();
