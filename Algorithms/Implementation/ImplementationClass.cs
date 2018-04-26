@@ -412,7 +412,27 @@ namespace Algorithms.Implementation
         /// <Detail name="Comment"></Detail>
         internal static void JumpingontheCloudsRevisited()
         {
-            throw new NotImplementedException();
+            // Optimization Pending.
+            int[] NK = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            int N = NK[0];
+            int K = NK[1];
+            int E = 100;
+            int[] Clouds = Console.ReadLine().Split().Select(int.Parse).ToArray();
+
+            for (int i = 0; (i + K) % N != 0; i += K)
+            {
+                E--;
+
+                if (Clouds[i + K] == 1)
+                    E -= 2;
+            }
+
+            if (Clouds[0] == 1)
+                E -= 3;
+            else
+                E--;
+
+            Console.WriteLine(E);
         }
 
         internal static void FindDigits()
