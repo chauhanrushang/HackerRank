@@ -85,7 +85,7 @@ namespace Algorithms.DynamicProgramming
         {
             throw new NotImplementedException();
         }
-        
+
         /// <summary>
         /// Fibonacci Modified
         /// </summary>
@@ -254,9 +254,38 @@ namespace Algorithms.DynamicProgramming
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// The Longest Increasing Subsequence
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/longest-increasing-subsequent/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void TheLongestIncreasingSubsequence()
         {
-            throw new NotImplementedException();
+
+
+            #region N^2 time using Dynamic Programming
+                /*
+                int N = Convert.ToInt32(Console.ReadLine());
+                int[] Arr = new int[N];
+                int[] SeqLen = new int[N];
+
+                // Read input
+                for (int x = 0; x < N; x++)
+                    Arr[x] = Convert.ToInt32(Console.ReadLine());
+
+                // Intialize Array
+                for (int y = 0; y < N; y++)
+                    SeqLen[y] = 1;
+
+                for (int j = 1; j < N; j++)
+                    for (int k = 0; k < j; k++)
+                        if (Arr[k] < Arr[j])
+                            SeqLen[j] = Math.Max(1 + SeqLen[k], SeqLen[j]);
+
+                Console.WriteLine(SeqLen.Max());
+                */
+            #endregion
         }
 
         internal static void CoinontheTable()
