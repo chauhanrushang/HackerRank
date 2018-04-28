@@ -2,6 +2,7 @@
 using Algorithms.DynamicProgramming;
 using Algorithms.Greedy;
 using Algorithms.Implementation;
+using Algorithms.Recursion;
 using Algorithms.Sorting;
 using Algorithms.Strings;
 using Algorithms.Warmup;
@@ -1024,7 +1025,60 @@ namespace Algorithms
 
         private static void RecursionProgram()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Please select an Dynamic Programming Program for simulation.");
+            Console.WriteLine("===================================================");
+            Console.WriteLine("00. Exit!");
+            Console.WriteLine("01. The Power Sum");
+            Console.WriteLine("02. Crossword Puzzle");
+            Console.WriteLine("03. Recursive Digit Sum");
+            Console.WriteLine("04. Simplified Chess Engine");
+            Console.WriteLine("05. Password Cracker");
+            Console.WriteLine("06. Arithmetic Expressions");
+            Console.WriteLine("07. Stone Division, Revisited");
+            Console.WriteLine("08. K Factorization");
+            Console.WriteLine("09. Bowling Pins");
+            Console.WriteLine("10. Simplified Chess Engine II");
+            Console.WriteLine("11. Repetitive K-Sums");
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            switch ((RecursionProgramTypes)input)
+            {
+                case RecursionProgramTypes.Exit:
+                    break;
+                case RecursionProgramTypes.ThePowerSum:
+                    RecursionClass.ThePowerSum();
+                    break;
+                case RecursionProgramTypes.CrosswordPuzzle:
+                    RecursionClass.CrosswordPuzzle(); 
+                    break;
+                case RecursionProgramTypes.RecursiveDigitSum:
+                    RecursionClass.RecursiveDigitSum(); 
+                    break;
+                case RecursionProgramTypes.SimplifiedChessEngine:
+                    RecursionClass.SimplifiedChessEngine(); 
+                    break;
+                case RecursionProgramTypes.PasswordCracker:
+                    RecursionClass.PasswordCracker(); 
+                    break;
+                case RecursionProgramTypes.ArithmeticExpressions:
+                    RecursionClass.ArithmeticExpressions(); 
+                    break;
+                case RecursionProgramTypes.StoneDivisionRevisited:
+                    RecursionClass.StoneDivisionRevisited(); 
+                    break;
+                case RecursionProgramTypes.KFactorization:
+                    RecursionClass.KFactorization(); 
+                    break;
+                case RecursionProgramTypes.BowlingPins:
+                    RecursionClass.BowlingPins(); 
+                    break;
+                case RecursionProgramTypes.SimplifiedChessEngineII:
+                    RecursionClass.SimplifiedChessEngineII(); 
+                    break;
+                case RecursionProgramTypes.RepetitiveKSums:
+                    RecursionClass.RepetitiveKSums(); 
+                    break;
+            }
         }
 
         private static void GameTheoryProgram()
