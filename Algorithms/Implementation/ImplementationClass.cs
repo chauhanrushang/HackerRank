@@ -399,9 +399,28 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Sequence Equation
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/permutation-equation/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void SequenceEquation()
         {
-            throw new NotImplementedException();
+            int N = Convert.ToInt32(Console.ReadLine());
+            int[] Arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+
+            for (int i = 1; i <= N; i++)
+            {
+                foreach (int j in Arr)
+                {
+                    if (i != Arr[Arr[j-1]-1])
+                        continue;
+
+                    Console.WriteLine(j);
+                    break;
+                }   
+            }
         }
 
 

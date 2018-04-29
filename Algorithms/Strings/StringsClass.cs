@@ -251,9 +251,26 @@ namespace Algorithms.Strings
             Console.WriteLine(Console.ReadLine().GroupBy(x => x).Count(x => x.Count() % 2 != 0) > 1 ? "NO" : "YES");
         }
 
+
+        /// <summary>
+        /// Two Strings
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/two-strings/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void TwoStrings()
         {
-            throw new NotImplementedException();
+            int N = Convert.ToInt32(Console.ReadLine());
+
+            while (N-- > 0)
+            {
+                char[] S1 = Console.ReadLine().ToCharArray();
+                char[] S2 = Console.ReadLine().ToCharArray();
+
+                if (S1.Intersect(S2).Any())
+                    Console.WriteLine("YES");
+                else
+                    Console.WriteLine("NO");
+            }
         }
 
         internal static void SherlockandtheValidString()
@@ -370,7 +387,7 @@ namespace Algorithms.Strings
         {
             throw new NotImplementedException();
         }
-        
+
         internal static void HowManySubstrings()
         {
             throw new NotImplementedException();
