@@ -177,9 +177,21 @@ namespace Algorithms.Strings
             }
         }
 
+
+        /// <summary>
+        /// Gemstones
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/gem-stones/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void Gemstones()
         {
-            throw new NotImplementedException();
+            int N = Convert.ToInt32(Console.ReadLine());
+            List<char> Gemstones = new List<char>();
+
+            for (int i = 0; i < N; i++)
+                Gemstones.AddRange(Console.ReadLine().ToCharArray().Distinct());
+
+            Console.WriteLine(Gemstones.GroupBy(x => x).Where(x => x.Count() == N).Count());
         }
 
 
@@ -210,14 +222,41 @@ namespace Algorithms.Strings
             }
         }
 
+
+        /// <summary>
+        /// Beautiful Binary String
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/beautiful-binary-string/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void BeautifulBinaryString()
         {
-            throw new NotImplementedException();
+            Console.ReadLine();
+            string S = Console.ReadLine();
+            Console.WriteLine((S.Length - S.Replace("010", "").Length) / 3);
         }
 
+
+        /// <summary>
+        /// The Love-Letter Mystery
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/the-love-letter-mystery/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void TheLoveLetterMystery()
         {
-            throw new NotImplementedException();
+            int TestCases = Convert.ToInt32(Console.ReadLine());
+
+            while (TestCases-- > 0)
+            {
+                char[] S = Console.ReadLine().ToCharArray();
+                int N = (S.Length / 2) - 1;
+                int Count = 0;
+
+                for (int i = 0, j = S.Length - 1; i <= N && j >= N; i++, j--)
+                    Count += Math.Abs(Convert.ToInt32(S[i]) - Convert.ToInt32(S[j]));
+
+                Console.WriteLine(Count);
+
+            }
         }
 
         internal static void DeterminingDNAHealth()
@@ -230,14 +269,67 @@ namespace Algorithms.Strings
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Anagram
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/anagram/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void Anagram()
         {
-            throw new NotImplementedException();
+            int N = Convert.ToInt32(Console.ReadLine());
+            while (N-- > 0)
+            {
+                string S = Console.ReadLine();
+                if (S.Length % 2 != 0)
+                {
+                    Console.WriteLine("-1");
+                    continue;
+                }
+
+                int[] Count1 = new int[26];
+                int[] Count2 = new int[26];
+                int Count = 0;
+                char[] S1 = S.Substring(0, (S.Length / 2) - 1).ToCharArray();
+                char[] S2 = S.Substring(S.Length / 2).ToCharArray();
+
+                foreach (char c in S1)
+                    Count1[Convert.ToInt32(c) - 'a']++;
+
+                foreach (char c in S2)
+                    Count2[Convert.ToInt32(c) - 'a']++;
+
+                for (int i = 0; i < 26; i++)
+                    Count += Math.Abs(Count1[i] - Count2[i]);
+
+                Console.WriteLine(Count / 2);
+            }
         }
 
+
+        /// <summary>
+        /// Making Anagrams
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/making-anagrams/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void MakingAnagrams()
         {
-            throw new NotImplementedException();
+            char[] S1 = Console.ReadLine().ToCharArray();
+            char[] S2 = Console.ReadLine().ToCharArray();
+            int[] Count1 = new int[26];
+            int[] Count2 = new int[26];
+            int Count = 0;
+
+            foreach (char c in S1)
+                Count1[Convert.ToInt32(c) - 'a']++;
+
+            foreach (char c in S2)
+                Count2[Convert.ToInt32(c) - 'a']++;
+
+            for (int i = 0; i < 26; i++)
+                Count += Math.Abs(Count1[i] - Count2[i]);
+
+            Console.WriteLine(Count);
         }
 
 
@@ -391,6 +483,18 @@ namespace Algorithms.Strings
         internal static void HowManySubstrings()
         {
             throw new NotImplementedException();
+        }
+
+
+        /// <summary>
+        /// String Construction
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/string-construction/problem</Detail>
+        /// <Detail name="Comment"></Detail>
+        internal static void StringConstruction()
+        {
+            int N = Convert.ToInt32(Console.ReadLine());
+            while (N-- > 0) Console.WriteLine(Console.ReadLine().ToCharArray().Distinct().Count());
         }
     }
 }

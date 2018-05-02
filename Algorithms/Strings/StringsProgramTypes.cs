@@ -30,6 +30,7 @@ namespace Algorithms.Strings
         MakingAnagrams,
         GameofThronesI,
         TwoStrings,
+        StringConstruction,
         SherlockandtheValidString,
         RichieRich,
         SherlockandAnagrams,

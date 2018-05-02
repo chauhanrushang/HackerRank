@@ -441,30 +441,31 @@ namespace Algorithms
             Console.WriteLine("19. Making Anagrams");
             Console.WriteLine("20. Game of Thrones - I");
             Console.WriteLine("21. Two Strings");
-            Console.WriteLine("22. Sherlock and the Valid String");
-            Console.WriteLine("23. Richie Rich");
-            Console.WriteLine("24. Sherlock and Anagrams");
-            Console.WriteLine("25. Common Child");
-            Console.WriteLine("26. Bear and Steady Gene");
-            Console.WriteLine("27. Morgan and a String");
-            Console.WriteLine("28. Count Strings");
-            Console.WriteLine("29. String Function Calculation");
-            Console.WriteLine("30. Build a Palindrome");
-            Console.WriteLine("31. Build a String");
-            Console.WriteLine("32. Gridland Provinces");
-            Console.WriteLine("33. Ashton and String");
-            Console.WriteLine("34. String Similarity");
-            Console.WriteLine("35. Super Functional Strings");
-            Console.WriteLine("36. Circular Palindromes");
-            Console.WriteLine("37. Similar Strings");
-            Console.WriteLine("38. Save Humanity");
-            Console.WriteLine("39. Find Strings");
-            Console.WriteLine("40. Palindromic Border");
-            Console.WriteLine("41. Two Two");
-            Console.WriteLine("42. Two Strings Game");
-            Console.WriteLine("43. Letter Islands");
-            Console.WriteLine("44. Pseudo-Isomorphic Substrings");
-            Console.WriteLine("45. How Many Substrings?");
+            Console.WriteLine("22. String Construction");
+            Console.WriteLine("23. Sherlock and the Valid String");
+            Console.WriteLine("24. Richie Rich");
+            Console.WriteLine("25. Sherlock and Anagrams");
+            Console.WriteLine("26. Common Child");
+            Console.WriteLine("27. Bear and Steady Gene");
+            Console.WriteLine("28. Morgan and a String");
+            Console.WriteLine("29. Count Strings");
+            Console.WriteLine("30. String Function Calculation");
+            Console.WriteLine("31. Build a Palindrome");
+            Console.WriteLine("32. Build a String");
+            Console.WriteLine("33. Gridland Provinces");
+            Console.WriteLine("34. Ashton and String");
+            Console.WriteLine("35. String Similarity");
+            Console.WriteLine("36. Super Functional Strings");
+            Console.WriteLine("37. Circular Palindromes");
+            Console.WriteLine("38. Similar Strings");
+            Console.WriteLine("39. Save Humanity");
+            Console.WriteLine("40. Find Strings");
+            Console.WriteLine("41. Palindromic Border");
+            Console.WriteLine("42. Two Two");
+            Console.WriteLine("43. Two Strings Game");
+            Console.WriteLine("44. Letter Islands");
+            Console.WriteLine("45. Pseudo-Isomorphic Substrings");
+            Console.WriteLine("46 How Many Substrings?");
             Console.WriteLine("===================================================");
             int input = Convert.ToInt32(Console.ReadLine());
 
@@ -606,6 +607,9 @@ namespace Algorithms
                     break;
                 case StringsProgramTypes.HowManySubstrings:
                     StringsClass.HowManySubstrings();
+                    break;
+                case StringsProgramTypes.StringConstruction:
+                    StringsClass.StringConstruction();
                     break;
                 default:
                     break;
