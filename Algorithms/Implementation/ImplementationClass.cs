@@ -560,6 +560,12 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Encryption
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/encryption/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void Encryption()
         {
             throw new NotImplementedException();
@@ -679,9 +685,28 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Manasa and Stones
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/manasa-and-stones/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void ManasaandStones()
         {
-            throw new NotImplementedException();
+            int T = Convert.ToInt32(Console.ReadLine());
+
+            while (T-- > 0)
+            {
+                int n = Convert.ToInt32(Console.ReadLine()) - 1; // First stone is always 0
+                int a = Convert.ToInt32(Console.ReadLine());
+                int b = Convert.ToInt32(Console.ReadLine());
+                List<int> numbers = new List<int>();
+
+                for (int i = 0; i <= n; i++)
+                    numbers.Add((a * i) + (b * (n - i)));
+
+                Console.WriteLine(string.Join(" ", numbers.Distinct().OrderBy(x => x)));
+            }
         }
 
         internal static void TheGridSearch()
@@ -689,14 +714,35 @@ namespace Algorithms.Implementation
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Happy Ladybugs
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/happy-ladybugs/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void HappyLadybugs()
         {
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Strange Counter
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/strange-code/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void StrangeCounter()
         {
-            throw new NotImplementedException();
+            Int64 t = Convert.ToInt64(Console.ReadLine());
+            Int64 Start = 3;
+
+            while(t > 0)
+            {
+                t -= Start;
+                Start *= 2;
+            }
+
+            Console.WriteLine(Math.Abs(t) + 1);
         }
 
         internal static void AbsolutePermutation()
