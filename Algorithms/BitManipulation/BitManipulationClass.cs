@@ -83,9 +83,29 @@ namespace Algorithms.BitManipulation
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Sansa and XOR
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/sansa-and-xor/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void SansaandXOR()
         {
-            throw new NotImplementedException();
+            int T = Convert.ToInt16(Console.ReadLine());
+
+            while (T-- > 0)
+            {
+                int n = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"n = {n}");
+                int[] Arr = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
+                Console.WriteLine($"Arr = {string.Join(",",Arr)}");
+                int result = Arr[0];
+
+                for (int i = 2; i < n; i += 2)
+                    result ^= Arr[i];
+
+                Console.WriteLine(result);
+            }
         }
 
         internal static void ANDProduct()
