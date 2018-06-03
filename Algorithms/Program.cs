@@ -1,4 +1,5 @@
 ﻿using System;
+using Algorithms.BitManipulation;
 using Algorithms.DynamicProgramming;
 using Algorithms.Greedy;
 using Algorithms.Implementation;
@@ -480,7 +481,7 @@ namespace Algorithms
                     StringsClass.CamelCase();
                     break;
                 case StringsProgramTypes.TwoCharacters:
-                    StringsClass.StrongPassword();
+                    StringsClass.TwoCharacters();
                     break;
                 case StringsProgramTypes.StrongPassword:
                     StringsClass.StrongPassword();
@@ -1024,7 +1025,124 @@ namespace Algorithms
 
         private static void BitManipulationProgram()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Please select an Dynamic Programming Program for simulation.");
+            Console.WriteLine("===================================================");
+            Console.WriteLine("00. Exit!");
+            Console.WriteLine("01. Lonely Integer");
+            Console.WriteLine("02. Maximizing XOR");
+            Console.WriteLine("03. Counter game");
+            Console.WriteLine("04. Xor-sequence");
+            Console.WriteLine("05. Sum vs XOR");
+            Console.WriteLine("06. The Great XOR");
+            Console.WriteLine("07. Flipping bits");
+            Console.WriteLine("08. Yet Another Minimax Problem");
+            Console.WriteLine("09. Sansa and XOR");
+            Console.WriteLine("10. AND Product");
+            Console.WriteLine("11. Winning Lottery Ticket");
+            Console.WriteLine("12. Xoring Ninja");
+            Console.WriteLine("13. Cipher");
+            Console.WriteLine("14. XOR Matrix");
+            Console.WriteLine("15. What's Next?");
+            Console.WriteLine("16. String Transmission");
+            Console.WriteLine("17. A or B");
+            Console.WriteLine("18. Manipulative Numbers");
+            Console.WriteLine("19. Stone Game");
+            Console.WriteLine("20. 2's complement");
+            Console.WriteLine("21. Changing Bits");
+            Console.WriteLine("22. XOR key");
+            Console.WriteLine("23. Maximizing the Function");
+            Console.WriteLine("24. XOR Subsequences");
+            Console.WriteLine("25. Iterate It");
+            Console.WriteLine("26. Hamming Distance");
+            Console.WriteLine("27. Mixing proteins");
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            switch ((BitManipulationProgramTypes)input)
+            {
+                case BitManipulationProgramTypes.LonelyInteger:
+                    BitManipulationClass.LonelyInteger();
+                    break;
+                case BitManipulationProgramTypes.MaximizingXOR:
+                    BitManipulationClass.MaximizingXOR();
+                    break;
+                case BitManipulationProgramTypes.Countergame:
+                    BitManipulationClass.Countergame();
+                    break;
+                case BitManipulationProgramTypes.Xorsequence:
+                    BitManipulationClass.Xorsequence();
+                    break;
+                case BitManipulationProgramTypes.SumvsXOR:
+                    BitManipulationClass.SumvsXOR(); 
+                    break;
+                case BitManipulationProgramTypes.TheGreatXOR:
+                    BitManipulationClass.TheGreatXOR(); 
+                    break;
+                case BitManipulationProgramTypes.Flippingbits:
+                    BitManipulationClass.Flippingbits(); 
+                    break;
+                case BitManipulationProgramTypes.YetAnotherMinimaxProblem:
+                    BitManipulationClass.YetAnotherMinimaxProblem(); 
+                    break;
+                case BitManipulationProgramTypes.SansaandXOR:
+                    BitManipulationClass.SansaandXOR(); 
+                    break;
+                case BitManipulationProgramTypes.ANDProduct:
+                    BitManipulationClass.ANDProduct(); 
+                    break;
+                case BitManipulationProgramTypes.WinningLotteryTicket:
+                    BitManipulationClass.WinningLotteryTicket(); 
+                    break;
+                case BitManipulationProgramTypes.XoringNinja:
+                    BitManipulationClass.XoringNinja(); 
+                    break;
+                case BitManipulationProgramTypes.Cipher:
+                    BitManipulationClass.Cipher(); 
+                    break;
+                case BitManipulationProgramTypes.XORMatrix:
+                    BitManipulationClass.XORMatrix(); 
+                    break;
+                case BitManipulationProgramTypes.WhatsNext:
+                    BitManipulationClass.WhatsNext(); 
+                    break;
+                case BitManipulationProgramTypes.StringTransmission:
+                    BitManipulationClass.StringTransmission(); 
+                    break;
+                case BitManipulationProgramTypes.AorB:
+                    BitManipulationClass.AorB(); 
+                    break;
+                case BitManipulationProgramTypes.ManipulativeNumbers:
+                    BitManipulationClass.ManipulativeNumbers(); 
+                    break;
+                case BitManipulationProgramTypes.StoneGame:
+                    BitManipulationClass.StoneGame(); 
+                    break;
+                case BitManipulationProgramTypes.Tscomplement:
+                    BitManipulationClass.Tscomplement(); 
+                    break;
+                case BitManipulationProgramTypes.ChangingBits:
+                    BitManipulationClass.ChangingBits(); 
+                    break;
+                case BitManipulationProgramTypes.XORkey:
+                    BitManipulationClass.XORkey(); 
+                    break;
+                case BitManipulationProgramTypes.MaximizingtheFunction:
+                    BitManipulationClass.MaximizingtheFunction(); 
+                    break;
+                case BitManipulationProgramTypes.XORSubsequences:
+                    BitManipulationClass.XORSubsequences(); 
+                    break;
+                case BitManipulationProgramTypes.IterateIt:
+                    BitManipulationClass.IterateIt(); 
+                    break;
+                case BitManipulationProgramTypes.HammingDistance:
+                    BitManipulationClass.HammingDistance(); 
+                    break;
+                case BitManipulationProgramTypes.Mixingproteins:
+                    BitManipulationClass.Mixingproteins(); 
+                    break;
+                default:
+                    break;
+            }
         }
 
         private static void RecursionProgram()
@@ -1053,34 +1171,34 @@ namespace Algorithms
                     RecursionClass.ThePowerSum();
                     break;
                 case RecursionProgramTypes.CrosswordPuzzle:
-                    RecursionClass.CrosswordPuzzle(); 
+                    RecursionClass.CrosswordPuzzle();
                     break;
                 case RecursionProgramTypes.RecursiveDigitSum:
-                    RecursionClass.RecursiveDigitSum(); 
+                    RecursionClass.RecursiveDigitSum();
                     break;
                 case RecursionProgramTypes.SimplifiedChessEngine:
-                    RecursionClass.SimplifiedChessEngine(); 
+                    RecursionClass.SimplifiedChessEngine();
                     break;
                 case RecursionProgramTypes.PasswordCracker:
-                    RecursionClass.PasswordCracker(); 
+                    RecursionClass.PasswordCracker();
                     break;
                 case RecursionProgramTypes.ArithmeticExpressions:
-                    RecursionClass.ArithmeticExpressions(); 
+                    RecursionClass.ArithmeticExpressions();
                     break;
                 case RecursionProgramTypes.StoneDivisionRevisited:
-                    RecursionClass.StoneDivisionRevisited(); 
+                    RecursionClass.StoneDivisionRevisited();
                     break;
                 case RecursionProgramTypes.KFactorization:
-                    RecursionClass.KFactorization(); 
+                    RecursionClass.KFactorization();
                     break;
                 case RecursionProgramTypes.BowlingPins:
-                    RecursionClass.BowlingPins(); 
+                    RecursionClass.BowlingPins();
                     break;
                 case RecursionProgramTypes.SimplifiedChessEngineII:
-                    RecursionClass.SimplifiedChessEngineII(); 
+                    RecursionClass.SimplifiedChessEngineII();
                     break;
                 case RecursionProgramTypes.RepetitiveKSums:
-                    RecursionClass.RepetitiveKSums(); 
+                    RecursionClass.RepetitiveKSums();
                     break;
             }
         }

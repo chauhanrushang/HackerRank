@@ -49,6 +49,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlgorithmType.cs" />
+    <Compile Include="BitManipulation\BitManipulationClass.cs" />
+    <Compile Include="BitManipulation\BitManipulationProgramTypes.cs" />
     <Compile Include="DynamicProgramming\DynamicClass.cs" />
     <Compile Include="DynamicProgramming\DynamicProgrammingProgramTypes.cs" />
     <Compile Include="Greedy\GreedyProgramClass.cs" />
@@ -70,7 +72,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BitManipulation\" />
     <Folder Include="ConstructiveAlgorithms\" />
     <Folder Include="GameTheory\" />
     <Folder Include="GraphTheory\" />
