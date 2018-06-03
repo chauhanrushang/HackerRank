@@ -365,8 +365,18 @@ namespace Algorithms.Strings
             }
         }
 
+
+        /// <summary>
+        /// Sherlock and the Valid String
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void SherlockandtheValidString()
         {
+            string S1 = Console.ReadLine();
+            string S2 = Console.ReadLine();
+
+            Console.WriteLine(S1.ToCharArray().Intersect(S2.Distinct()).Count());
             throw new NotImplementedException();
         }
 
@@ -380,9 +390,19 @@ namespace Algorithms.Strings
             throw new NotImplementedException();
         }
 
+
+        /// <summary>
+        /// Common Child
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/common-child/problem</Detail>
+        /// <Detail name="Comment"></Detail>
         internal static void CommonChild()
         {
-            throw new NotImplementedException();
+            string S1 = Console.ReadLine();
+            string S2 = Console.ReadLine();
+
+            string CommonS1 = string.Join("", S1.Intersect(S2));
+            string CommonS2 = string.Join("", S2.Intersect(S1));
         }
 
         internal static void BearandSteadyGene()
@@ -480,11 +500,6 @@ namespace Algorithms.Strings
             throw new NotImplementedException();
         }
 
-        internal static void HowManySubstrings()
-        {
-            throw new NotImplementedException();
-        }
-
 
         /// <summary>
         /// String Construction
@@ -495,6 +510,37 @@ namespace Algorithms.Strings
         {
             int N = Convert.ToInt32(Console.ReadLine());
             while (N-- > 0) Console.WriteLine(Console.ReadLine().ToCharArray().Distinct().Count());
+        }
+
+
+        /// <summary>
+        /// Two Characters
+        /// </summary>
+        /// <Detail name="URL">https://www.hackerrank.com/challenges/two-characters/problem</Detail>
+        /// <Detail name="Comment"></Detail>
+        internal static void TwoCharacters()
+        {
+            throw new NotImplementedException(" ");
+
+            //int N = Convert.ToInt32(Console.ReadLine());
+            //string S = Console.ReadLine();
+            //char[] DistinctChar = S.Distinct().ToArray();
+            //int MaxStringSize = 0;
+
+            //foreach (char C in DistinctChar)
+            //{
+            //    string Updated = S.Replace(C.ToString(), "");
+            //    if (string.IsNullOrEmpty(Updated))
+            //        continue;
+
+            //    char PrevChar = Updated.First();
+
+            //    for (int i = 0; i < length; i++)
+            //    {
+
+            //    }
+            //}
+
         }
     }
 }
